@@ -65,10 +65,6 @@ Frontend: http://localhost:3000
 Backend: http://localhost:3001
 ```
 
-## 📱 Screenshots
-
-[Adicionar screenshots da aplicação aqui]
-
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para:
