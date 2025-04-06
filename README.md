@@ -83,7 +83,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE.md](LICENSE.md) p
 
 **Inácio Pina**
 - GitHub: [@inaciopina](https://github.com/inaciopina)
-- LinkedIn: [Seu LinkedIn]
+- LinkedIn: [inaciopina](https://www.linkedin.com/in/inaciopina)
 
 ---
 ⭐️ From [inaciopina](https://github.com/inaciopina) 
