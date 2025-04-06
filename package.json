@@ -1,0 +1,22 @@
+{
+  "name": "aetheria",
+  "version": "1.0.0",
+  "description": "Santuário Digital de Bem-estar e Mindfulness",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node start.js",
+    "install-all": "npm run setup && npm install"
+  },
+  "keywords": [
+    "mindfulness",
+    "bem-estar",
+    "meditação",
+    "sons ambientais"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+} 
