@@ -1,0 +1,71 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+        cache: 'npm'
+        
+    - name: Install dependencies (Backend)
+      run: |
+        cd backend
+        npm ci
+        
+    - name: Install dependencies (Frontend)
+      run: |
+        cd frontend
+        npm ci
+        
+    - name: Build Frontend
+      run: |
+        cd frontend
+        npm run build
+        
+    - name: Deploy to Heroku
+      uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
+        appdir: "."
+        
+    - name: Run Database Migrations
+      run: |
+        cd backend
+        npm run migrate
+        
+    - name: Health Check
+      run: |
+        curl -f ${{ secrets.APP_URL }}/health || exit 1
+        
+    - name: Notify on Success
+      if: success()
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_CHANNEL: deployments
+        SLACK_COLOR: good
+        SLACK_TITLE: Deploy Successful
+        SLACK_MESSAGE: 'Deploy to production completed successfully!'
+        
+    - name: Notify on Failure
+      if: failure()
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_CHANNEL: deployments
+        SLACK_COLOR: danger
+        SLACK_TITLE: Deploy Failed
+        SLACK_MESSAGE: 'Deploy to production failed!' 

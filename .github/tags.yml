@@ -1,0 +1,33 @@
+name: Tags
+description: Adicionar tags ao repositório
+title: "Tags: "
+labels: ["enhancement", "bug", "documentation", "good first issue", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com o Aetheria! Por favor, selecione as tags apropriadas para sua contribuição.
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Tags
+      description: Selecione todas as tags que se aplicam
+      options:
+        - label: Melhoria
+          required: false
+        - label: Bug
+          required: false
+        - label: Documentação
+          required: false
+        - label: Bom para iniciantes
+          required: false
+        - label: Precisa de ajuda
+          required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Por favor, descreva as tags selecionadas
+      placeholder: Explique por que você selecionou estas tags...
+    validations:
+      required: true 

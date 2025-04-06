@@ -1,137 +1,93 @@
-# Aetheria - Santuário Digital de Bem-estar
+# Aetheria - Santuário Digital de Bem-estar e Mindfulness
 
-Aetheria é um aplicativo web pessoal de bem-estar e mindfulness, projetado como um "santuário digital" para o usuário. O objetivo principal é proporcionar alívio de ansiedade e estresse através de experiências imersivas e relaxantes, fortemente inspiradas na natureza.
+![Aetheria Banner](frontend/public/favicon.png)
 
-## Funcionalidades
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)](https://styled-components.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-- **Mixer de Sons Ambientais:** Misture e ajuste o volume de diversos sons da natureza (chuva, ondas, vento, etc.) para criar paisagens sonoras personalizadas.
-- **Visualizações Relaxantes:** Animações visuais suaves e texturizadas, como "aquários digitais" personalizáveis.
-- **Exercícios de Respiração Guiada:** Guia através de exercícios de respiração com animações visuais fluidas.
-- **Diário de Reflexão:** Espaço para registrar pensamentos e sentimentos em uma interface elegante.
+## 🌟 Sobre o Projeto
 
-## Tecnologias Utilizadas
+Aetheria é uma plataforma completa desenvolvida para promover o bem-estar mental e emocional através de recursos interativos e personalizados. Combinando técnicas de meditação, sons relaxantes, visualizações tranquilizantes e ferramentas de autoconhecimento, criamos um ambiente seguro e acolhedor para sua jornada de desenvolvimento pessoal.
 
-### Frontend
-- React
-- Styled Components
-- Framer Motion
-- Howler.js (para manipulação de áudio)
-- React Router
+## ✨ Recursos Principais
 
-### Backend
-- Node.js
-- Express
-- MongoDB (para armazenamento de dados)
-- JWT (para autenticação)
+- 🧘‍♂️ **Meditação Guiada**: Exercícios guiados para reduzir o estresse e melhorar o foco
+- 🎵 **Mixer de Sons Ambientais**: Crie seu próprio ambiente de relaxamento personalizado
+- 🎥 **Visualizações Relaxantes**: Desfrute de vídeos tranquilizantes que ajudam a acalmar a mente
+- 🌬️ **Exercícios de Respiração**: Técnicas de respiração para gerenciar ansiedade e estresse
+- 📔 **Diário de Reflexão**: Registre seus pensamentos e emoções em um espaço seguro
 
-## Instalação Automática
+## 🚀 Tecnologias Utilizadas
 
-Para instalar e iniciar o projeto automaticamente, siga estes passos:
+- **Frontend**:
+  - React.js
+  - Styled Components
+  - Framer Motion
+  - React Router
+  - React Icons
 
-1. Clone o repositório:
+- **Backend**:
+  - Node.js
+  - Express
+  - MongoDB (para futuras implementações)
+
+## 💻 Como Executar
+
+1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/aetheria.git
-cd aetheria
+git clone https://github.com/inaciopina/Aetheria.git
+cd Aetheria
 ```
 
-2. Execute o script de instalação:
+2. Instale as dependências
 ```bash
-npm run install-all
-```
-
-3. Inicie o projeto:
-```bash
-npm start
-```
-
-O script irá:
-- Instalar todas as dependências necessárias
-- Configurar o ambiente
-- Iniciar o backend e o frontend automaticamente
-
-## Instalação Manual
-
-Se preferir instalar manualmente, siga estes passos:
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/aetheria.git
-cd aetheria
-```
-
-2. Instale as dependências do frontend:
-```bash
-cd frontend
-npm install
-```
-
-3. Instale as dependências do backend:
-```bash
-cd ../backend
-npm install
-```
-
-4. Configure as variáveis de ambiente:
-Crie um arquivo `.env` na pasta backend com as seguintes variáveis:
-```
-PORT=3001
-MONGODB_URI=sua_uri_do_mongodb
-JWT_SECRET=seu_segredo_jwt
-```
-
-5. Inicie o servidor de desenvolvimento:
-```bash
-# Terminal 1 (backend)
+# Instalar dependências do backend
 cd backend
-npm start
+npm install
 
-# Terminal 2 (frontend)
-cd frontend
-npm start
+# Instalar dependências do frontend
+cd ../frontend
+npm install
 ```
 
-## Estrutura do Projeto
-
-```
-aetheria/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ui/
-│   │   │   ├── features/
-│   │   │   └── layout/
-│   │   ├── styles/
-│   │   ├── hooks/
-│   │   ├── utils/
-│   │   ├── assets/
-│   │   ├── context/
-│   │   └── services/
-│   └── public/
-└── backend/
-    ├── src/
-    │   ├── controllers/
-    │   ├── models/
-    │   ├── routes/
-    │   ├── services/
-    │   ├── config/
-    │   └── middleware/
-    └── public/
+3. Inicie o servidor
+```bash
+# Na raiz do projeto
+node start.js
 ```
 
-## Contribuição
+4. Acesse a aplicação
+```
+Frontend: http://localhost:3000
+Backend: http://localhost:3001
+```
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+## 📱 Screenshots
+
+[Adicionar screenshots da aplicação aqui]
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+1. Fazer um Fork do projeto
+2. Criar uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+4. Push para a Branch (`git push origin feature/AmazingFeature`)
+5. Abrir um Pull Request
 
-## Licença
+## 📝 Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
-## Contato
+## 👤 Autor
 
-Seu Nome - [@seu_twitter](https://twitter.com/seu_twitter) - email@exemplo.com
+**Inácio Pina**
+- GitHub: [@inaciopina](https://github.com/inaciopina)
+- LinkedIn: [Seu LinkedIn]
 
-Link do Projeto: [https://github.com/seu-usuario/aetheria](https://github.com/seu-usuario/aetheria) 
+---
+⭐️ From [inaciopina](https://github.com/inaciopina) 

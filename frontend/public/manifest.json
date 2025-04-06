@@ -1,19 +1,20 @@
 {
   "short_name": "Aetheria",
-  "name": "Aetheria - Santuário Digital",
+  "name": "Aetheria - Santuário Digital de Bem-estar",
+  "description": "Uma plataforma completa para promover o bem-estar mental e emocional através de recursos interativos e personalizados.",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     },
     {
-      "src": "favicon.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -21,5 +22,28 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#4A90E2",
-  "background_color": "#F5F9FF"
+  "background_color": "#1A1A1A",
+  "orientation": "portrait",
+  "categories": ["lifestyle", "health", "wellness", "meditation"],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "1280x720"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Meditação",
+      "url": "/meditation",
+      "icons": [{ "src": "meditation-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Sons Ambientais",
+      "url": "/ambient-sounds",
+      "icons": [{ "src": "sounds-icon.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 } 

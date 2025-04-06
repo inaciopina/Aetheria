@@ -1,25 +1,85 @@
-export const theme = {
+const theme = {
   colors: {
-    background: '#f5f7fa',
-    surface: 'rgba(255, 255, 255, 0.95)',
-    text: '#2c3e50',
-    textSecondary: '#7f8c8d',
-    primary: '#3498db',
-    primaryDark: '#2980b9',
-    secondary: '#2ecc71',
-    error: '#e74c3c',
-    glassBackground: 'rgba(255, 255, 255, 0.95)',
-    glassBorder: 'rgba(0, 0, 0, 0.1)',
-    glassHover: 'rgba(255, 255, 255, 0.98)'
+    primary: '#4A90E2',
+    secondary: '#50E3C2',
+    background: '#1A1A1A',
+    surface: '#2D2D2D',
+    text: '#FFFFFF',
+    textSecondary: '#B3B3B3',
+    error: '#FF4B4B',
+    success: '#4CAF50',
+    warning: '#FFC107',
+    info: '#2196F3',
+    overlay: 'rgba(0, 0, 0, 0.7)',
+    card: '#333333',
+    cardHover: '#404040',
+    border: '#404040',
+    shadow: 'rgba(0, 0, 0, 0.25)',
+  },
+  fonts: {
+    primary: "'Poppins', sans-serif",
+    secondary: "'Montserrat', sans-serif",
+  },
+  fontSizes: {
+    xs: '0.75rem',
+    sm: '0.875rem',
+    base: '1rem',
+    lg: '1.125rem',
+    xl: '1.25rem',
+    '2xl': '1.5rem',
+    '3xl': '1.875rem',
+    '4xl': '2.25rem',
+    '5xl': '3rem',
+  },
+  spacing: {
+    xs: '0.25rem',
+    sm: '0.5rem',
+    base: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    '2xl': '3rem',
+    '3xl': '4rem',
+    '4xl': '6rem',
+  },
+  borderRadius: {
+    sm: '0.25rem',
+    base: '0.5rem',
+    lg: '1rem',
+    xl: '1.5rem',
+    full: '9999px',
   },
   shadows: {
-    sm: '0 2px 8px rgba(0, 0, 0, 0.05)',
-    md: '0 4px 12px rgba(0, 0, 0, 0.08)',
-    lg: '0 8px 24px rgba(0, 0, 0, 0.12)'
+    sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    base: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+    xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
   },
-  radius: {
-    sm: '8px',
-    md: '12px',
-    lg: '16px'
-  }
-}; 
+  transitions: {
+    base: '0.3s ease',
+    fast: '0.15s ease',
+    slow: '0.5s ease',
+  },
+  breakpoints: {
+    xs: '320px',
+    sm: '640px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1280px',
+    '2xl': '1536px',
+  },
+  zIndices: {
+    hide: -1,
+    base: 0,
+    docked: 10,
+    dropdown: 1000,
+    sticky: 1100,
+    banner: 1200,
+    overlay: 1300,
+    modal: 1400,
+    popover: 1500,
+    tooltip: 1600,
+  },
+};
+
+export default theme; 
