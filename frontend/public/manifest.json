@@ -4,9 +4,9 @@
   "description": "Uma plataforma completa para promover o bem-estar mental e emocional através de recursos interativos e personalizados.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
       "src": "logo192.png",
